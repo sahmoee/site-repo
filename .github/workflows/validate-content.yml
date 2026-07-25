@@ -1,0 +1,20 @@
+# Blocks a broken recipes.json from ever reaching Netlify, the Worker, or the app.
+name: validate-content
+on:
+  push: { paths: ["content/**"] }
+  pull_request: { paths: ["content/**"] }
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: recipes.json is valid JSON with required fields
+        run: |
+          jq empty content/recipes.json
+          jq -e '.version and .updated and (.recipes | length > 0)' content/recipes.json
+          jq -e '[.recipes[] | select((.id? and .title? and .ingredients? and .instructions?) | not)] | length == 0' content/recipes.json
+          # Absolute-or-empty image URLs only (relative paths break the app).
+          jq -e '[.recipes[] | select(.image != "" and (.image | startswith("https://") | not))] | length == 0' content/recipes.json
+          # Recipe ids must be unique.
+          jq -e '(.recipes | map(.id) | length) == (.recipes | map(.id) | unique | length)' content/recipes.json
+          echo "recipes.json OK"
