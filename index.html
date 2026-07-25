@@ -3,24 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SOwens Studios — Thoughtful apps for everyday life</title>
-<meta name="description" content="SOwens Studios builds thoughtful, native iOS apps. Meet Stocked. — a kitchen management and meal planning app that keeps your pantry, recipes, and grocery list in sync.">
-<meta name="theme-color" content="#2D2C2A">
+<title>SOwens Studios — An independent software studio</title>
+<meta name="description" content="SOwens Studios is a small, independent studio building thoughtful native Apple software. A look at what we're making — including Stocked, Sesh, and Atlas.">
+<meta name="theme-color" content="#0B0B0D">
 
 <!-- Open Graph -->
 <meta property="og:title" content="SOwens Studios">
-<meta property="og:description" content="Thoughtful, native iOS apps. Meet Stocked. — kitchen management and meal planning done right.">
+<meta property="og:description" content="An independent software studio building thoughtful, native Apple apps.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sowensstudios.com">
 <meta property="og:image" content="https://sowensstudios.com/assets/og-image.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
 
 <header class="site-header">
   <div class="wrap header-inner">
@@ -28,9 +31,8 @@
       <span class="brand-mark" aria-hidden="true">S</span>
       <span class="brand-name">SOwens Studios</span>
     </a>
-    <nav class="nav">
-      <a href="#stocked">Stocked.</a>
-      <a href="#features">Features</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#work">Work</a>
       <a href="#studio">Studio</a>
       <a href="#contact" class="nav-cta">Contact</a>
     </nav>
@@ -42,84 +44,104 @@
   <!-- HERO -->
   <section class="hero">
     <div class="wrap hero-inner">
-      <div class="hero-copy">
-        <p class="eyebrow">SOwens Studios</p>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-dot"></span>Independent software studio</p>
         <h1>Software with a<br><em>sense of place.</em></h1>
-        <p class="lede">A small studio building native iOS apps that feel considered, calm, and genuinely useful. No clutter, no noise — just tools that respect your time.</p>
+        <p class="lede">SOwens Studios is a small, independent shop building native Apple apps that feel considered, calm, and genuinely useful. A few things we're making right now.</p>
         <div class="hero-actions">
-          <a href="#stocked" class="btn btn-primary">Meet Stocked.</a>
+          <a href="#work" class="btn btn-primary">See the work</a>
           <a href="#studio" class="btn btn-ghost">About the studio</a>
         </div>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="phone">
-          <div class="phone-notch"></div>
-          <div class="phone-screen">
-            <div class="mock-header">Stocked.</div>
-            <div class="mock-card mock-brief">
-              <span class="mock-tag">Daily Brief</span>
-              <p>3 items expiring soon · 2 recipes ready to cook</p>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="stack">
+          <div class="stack-card sc-atlas">
+            <span class="sc-name">Atlas</span>
+            <span class="sc-tag">In development</span>
+          </div>
+          <div class="stack-card sc-sesh">
+            <span class="sc-name">Sesh</span>
+            <span class="sc-tag">In development</span>
+          </div>
+          <div class="stack-card sc-stocked">
+            <span class="sc-badge">Flagship</span>
+            <span class="sc-name">Stocked.</span>
+            <span class="sc-sub">Kitchen &amp; meal planning</span>
+            <div class="sc-rows">
+              <span class="sc-row"><i class="d d-green"></i>Pantry · 42 items</span>
+              <span class="sc-row"><i class="d d-gold"></i>Recipes · 18 saved</span>
+              <span class="sc-row"><i class="d d-mute"></i>Grocery · 7 to buy</span>
             </div>
-            <div class="mock-row"><span class="dot dot-green"></span>Pantry · 42 items</div>
-            <div class="mock-row"><span class="dot dot-gold"></span>Recipes · 18 saved</div>
-            <div class="mock-row"><span class="dot dot-char"></span>Grocery · 7 to buy</div>
-            <div class="mock-cook">Cook something →</div>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- STOCKED PRODUCT -->
-  <section id="stocked" class="product">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">The flagship app</p>
-        <h2>Stocked.</h2>
-        <p class="section-sub">Kitchen management and meal planning for people who cook. Keep your pantry, recipes, and grocery list working together instead of fighting each other.</p>
-      </div>
-
-      <div class="pillars">
-        <div class="pillar">
-          <div class="pillar-icon" aria-hidden="true">🏠</div>
-          <h3>Home</h3>
-          <p>A daily brief that tells you what's expiring, what's ready to cook, and where your streak stands — the moment you open the app.</p>
-        </div>
-        <div class="pillar">
-          <div class="pillar-icon" aria-hidden="true">🧺</div>
-          <h3>Inventory</h3>
-          <p>Track everything in your pantry with expiry dates, barcode scanning, and receipt capture. Know what you have before you shop.</p>
-        </div>
-        <div class="pillar">
-          <div class="pillar-icon" aria-hidden="true">📖</div>
-          <h3>Recipes</h3>
-          <p>Browse by mood or cuisine, surface recipes you can make right now from what's on hand, and search in plain language.</p>
-        </div>
-        <div class="pillar">
-          <div class="pillar-icon" aria-hidden="true">🛒</div>
-          <h3>Grocery List</h3>
-          <p>Recipe-aware lists that sort themselves, with a Find in Store handoff to fifteen major grocery chains.</p>
-        </div>
+    <div class="wrap marquee-wrap reveal">
+      <div class="marquee">
+        <span>Native Apple software</span><i>◦</i>
+        <span>Privacy by default</span><i>◦</i>
+        <span>Considered design</span><i>◦</i>
+        <span>Built to last</span><i>◦</i>
+        <span>Small on purpose</span><i>◦</i>
       </div>
     </div>
   </section>
 
-  <!-- FEATURES -->
-  <section id="features" class="features">
+  <!-- WORK -->
+  <section id="work" class="work">
     <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Under the hood</p>
-        <h2>Details that add up</h2>
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="eyebrow-dot"></span>Selected work</p>
+        <h2>What we're building</h2>
+        <p class="section-sub">A brief look at the projects currently taking shape at the studio.</p>
       </div>
-      <div class="feature-grid">
-        <div class="feature"><h4>Sign in with Apple</h4><p>Private, frictionless sign-in. Your data stays yours.</p></div>
-        <div class="feature"><h4>Made to match you</h4><p>A six-channel color system lets you theme the entire app to taste.</p></div>
-        <div class="feature"><h4>Cook streaks</h4><p>Milestones and history that quietly reward the habit of cooking.</p></div>
-        <div class="feature"><h4>Meal prep mode</h4><p>Plan ahead and batch your week without spreadsheet gymnastics.</p></div>
-        <div class="feature"><h4>Ready to cook</h4><p>Instantly see the recipes you can make from what's already in your kitchen.</p></div>
-        <div class="feature"><h4>iCloud backup</h4><p>Your pantry and recipes sync and stay safe across devices.</p></div>
-        <div class="feature"><h4>iPad ready</h4><p>A proper split-view layout, not a stretched phone screen.</p></div>
-        <div class="feature"><h4>Face ID lock</h4><p>Keep your kitchen data private with an optional app lock.</p></div>
+
+      <div class="projects">
+
+        <!-- STOCKED -->
+        <article class="project p-stocked reveal">
+          <div class="project-top">
+            <span class="project-index">01</span>
+            <span class="pill pill-live">Flagship · iOS</span>
+          </div>
+          <h3>Stocked.</h3>
+          <p class="project-cat">Kitchen management &amp; meal planning</p>
+          <p class="project-desc">A native iOS app that keeps your pantry, recipes, and grocery list working together — so you always know what you have on hand and what's ready to cook. Track inventory with expiry dates, surface recipes you can make right now, and hand a smart grocery list off to the store.</p>
+          <ul class="chips">
+            <li>Pantry &amp; expiry tracking</li>
+            <li>Ready-to-cook recipes</li>
+            <li>Smart grocery lists</li>
+            <li>Meal prep mode</li>
+            <li>iCloud sync</li>
+          </ul>
+        </article>
+
+        <!-- SESH -->
+        <!-- TODO: replace summary below with the real Sesh description -->
+        <article class="project p-sesh reveal">
+          <div class="project-top">
+            <span class="project-index">02</span>
+            <span class="pill">In development</span>
+          </div>
+          <h3>Sesh</h3>
+          <p class="project-cat">Coming soon</p>
+          <p class="project-desc">Something new from the studio, in active development. We're keeping the details under wraps for now — the full story is coming soon.</p>
+        </article>
+
+        <!-- ATLAS -->
+        <!-- TODO: replace summary below with the real Atlas description -->
+        <article class="project p-atlas reveal">
+          <div class="project-top">
+            <span class="project-index">03</span>
+            <span class="pill">In development</span>
+          </div>
+          <h3>Atlas</h3>
+          <p class="project-cat">Coming soon</p>
+          <p class="project-desc">Another app taking shape behind the scenes. Designed with the same care as everything else we make — more to share before long.</p>
+        </article>
+
       </div>
     </div>
   </section>
@@ -127,25 +149,35 @@
   <!-- STUDIO -->
   <section id="studio" class="studio">
     <div class="wrap studio-inner">
-      <div class="studio-copy">
-        <p class="eyebrow">The studio</p>
+      <div class="studio-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-dot"></span>The studio</p>
         <h2>Small on purpose.</h2>
         <p>SOwens Studios is an independent shop focused on native Apple software. Every decision — product, design, and code — is made with care and a bias toward simplicity. The goal is software that feels like it was built by someone who actually uses it, because it was.</p>
         <p>No growth-hacking, no dark patterns, no feature bloat. Just apps built to last.</p>
       </div>
-      <div class="studio-values">
-        <div class="value"><span class="value-num">01</span><div><h4>Native first</h4><p>Built with SwiftUI for the platforms Apple ships, the way Apple intends.</p></div></div>
-        <div class="value"><span class="value-num">02</span><div><h4>Considered design</h4><p>Serif type, warm palettes, and layouts that breathe.</p></div></div>
-        <div class="value"><span class="value-num">03</span><div><h4>Privacy by default</h4><p>Your data lives on your devices and in your iCloud — not on ours.</p></div></div>
+      <div class="studio-values reveal">
+        <div class="value">
+          <span class="value-num">01</span>
+          <div><h4>Native first</h4><p>Built with SwiftUI for the platforms Apple ships, the way Apple intends.</p></div>
+        </div>
+        <div class="value">
+          <span class="value-num">02</span>
+          <div><h4>Considered design</h4><p>Warm type, calm palettes, and layouts that breathe.</p></div>
+        </div>
+        <div class="value">
+          <span class="value-num">03</span>
+          <div><h4>Privacy by default</h4><p>Your data lives on your devices and in your iCloud — not on ours.</p></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA / CONTACT -->
+  <!-- CONTACT -->
   <section id="contact" class="cta">
-    <div class="wrap cta-inner">
-      <h2>Get in touch</h2>
-      <p>Questions, feedback, or just want to follow along? Reach out.</p>
+    <div class="wrap cta-inner reveal">
+      <p class="eyebrow eyebrow-center"><span class="eyebrow-dot"></span>Get in touch</p>
+      <h2>Let's talk.</h2>
+      <p class="cta-sub">Questions, feedback, or just want to follow along as we build? Reach out anytime.</p>
       <a href="mailto:hello@sowensstudios.com" class="btn btn-primary btn-lg">hello@sowensstudios.com</a>
     </div>
   </section>
@@ -154,11 +186,32 @@
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
-    <span class="footer-brand">SOwens Studios</span>
+    <a href="#top" class="brand footer-brandlink">
+      <span class="brand-mark" aria-hidden="true">S</span>
+      <span class="footer-brand">SOwens Studios</span>
+    </a>
     <span class="footer-copy">© <span id="year">2026</span> SOwens Studios. All rights reserved.</span>
   </div>
 </footer>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Scroll reveal
+  (function () {
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) {
+      els.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(function (el) { io.observe(el); });
+  })();
+</script>
 </body>
 </html>
