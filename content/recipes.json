@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "updated": "2026-07-25",
+  "updated": "2026-07-31",
   "recipes": [
     {
       "id": "001",
       "title": "One-Pan Garlic Butter Chicken & Rice",
       "category": "Dinner",
       "area": "American",
-      "image": "",
+      "image": "https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg",
+      "servings": 4,
       "tags": [
         "one-pan",
         "weeknight",
@@ -42,7 +43,8 @@
       "title": "Weeknight Tomato Basil Pasta",
       "category": "Dinner",
       "area": "Italian",
-      "image": "",
+      "image": "https://www.themealdb.com/images/media/meals/sutysw1468247559.jpg",
+      "servings": 4,
       "tags": [
         "vegetarian",
         "20-minute",
@@ -75,7 +77,8 @@
       "title": "Sheet-Pan Honey Garlic Salmon",
       "category": "Dinner",
       "area": "American",
-      "image": "",
+      "image": "https://www.themealdb.com/images/media/meals/1548772327.jpg",
+      "servings": 4,
       "tags": [
         "high-protein",
         "30-minute",
@@ -108,7 +111,8 @@
       "title": "Black Bean Quesadillas",
       "category": "Lunch",
       "area": "Mexican",
-      "image": "",
+      "image": "https://www.themealdb.com/images/media/meals/kcv6hj1598728179.jpg",
+      "servings": 4,
       "tags": [
         "vegetarian",
         "budget",
@@ -141,7 +145,8 @@
       "title": "Overnight Oats, Three Ways",
       "category": "Breakfast",
       "area": "American",
-      "image": "",
+      "image": "https://www.themealdb.com/images/media/meals/b6ywuu1548772350.jpg",
+      "servings": 1,
       "tags": [
         "make-ahead",
         "no-cook",
