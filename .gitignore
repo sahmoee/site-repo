@@ -1,0 +1,11 @@
+.DS_Store
+.buildbuddy-backups/
+_stale_locks/
+.netlify/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.mobileprovision

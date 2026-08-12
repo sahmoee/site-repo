@@ -1,0 +1,11 @@
+[build]
+  publish = "."
+
+[build.environment]
+  TZ = "America/Chicago"
+
+[context.production]
+  publish = "."
+
+# Production is intentionally static. Secrets belong in scoped Netlify
+# environment variables or server-side services, never in this file.

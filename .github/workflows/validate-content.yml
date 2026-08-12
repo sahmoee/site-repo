@@ -1,8 +1,8 @@
 # Blocks a broken recipes.json from ever reaching Netlify, the Worker, or the app.
 name: validate-content
 on:
-  push: { paths: ["content/**"] }
-  pull_request: { paths: ["content/**"] }
+  push:
+  pull_request:
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -18,3 +18,14 @@ jobs:
           # Recipe ids must be unique.
           jq -e '(.recipes | map(.id) | length) == (.recipes | map(.id) | unique | length)' content/recipes.json
           echo "recipes.json OK"
+      - name: Website deployment policy is present
+        run: |
+          test -f netlify.toml
+          test -f _headers
+          test -f _redirects
+          grep -q 'Content-Security-Policy:' _headers
+          grep -q 'X-Content-Type-Options: nosniff' _headers
+          grep -q 'publish = "."' netlify.toml
+      - name: Private and generated files are not tracked
+        run: |
+          ! git ls-files | grep -E '(^|/)(\.DS_Store|\.buildbuddy-backups|_stale_locks|AGENTS\.md|CLAUDE\.md|README-FIRST\.md|CROSS-PROJECT-SYNC\.md|AGENT-HANDOFF\.md)$'
