@@ -2,6 +2,17 @@
 
 Static source for [sowensstudios.com](https://sowensstudios.com).
 
+## Public sections
+
+- `/` — studio overview and complete product portfolio
+- `/apps/` and `/apps/{product}/` — portfolio and dedicated product pages
+- `/updates/` — public studio and product milestones
+- `/press/` — studio boilerplate, product summaries, and brand mark
+- `/support/` — Netlify-backed support intake
+- `/privacy/` and `/terms/` — portfolio-wide policies
+
+The site uses system fonts, first-party assets, and a small dependency-free navigation script. Add store links only after their public URLs are confirmed.
+
 ## Publishing flow
 
 1. Edit and preview this repository locally.

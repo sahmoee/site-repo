@@ -1,5 +1,5 @@
-# Smart links. Fill in the real App Store id at release.
-/app          https://apps.apple.com/app/idXXXXXXXXX   302
-/privacy      /privacy.html                            200
-/terms        /terms.html                              200
-/support      /support.html                            200
+# Stable public routes. App Store links are added only after IDs are confirmed.
+/app           /apps/       301
+/privacy.html  /privacy/    301
+/terms.html    /terms/      301
+/support.html  /support/    301
