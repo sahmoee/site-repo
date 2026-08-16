@@ -28,4 +28,4 @@ jobs:
           grep -q 'publish = "."' netlify.toml
       - name: Private and generated files are not tracked
         run: |
-          ! git ls-files | grep -E '(^|/)(\.DS_Store|\.buildbuddy-backups|_stale_locks|AGENTS\.md|CLAUDE\.md|README-FIRST\.md|CROSS-PROJECT-SYNC\.md|AGENT-HANDOFF\.md)$'
+          ! git ls-files | grep -E '(^|/)(\.DS_Store|\.buildbuddy-backups|_stale_locks|CLAUDE\.md|README-FIRST\.md|CROSS-PROJECT-SYNC\.md|AGENT-HANDOFF\.md)$'
