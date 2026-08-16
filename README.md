@@ -37,4 +37,4 @@ Production should be configured in Netlify to require Git-based deploys. Do not 
 - `content/recipes.json` is a public catalog consumed by existing integrations and is validated by GitHub Actions.
 - Large public media should use the studio media/CDN service with versioned URLs; private media should use authenticated object storage.
 
-Local AI instructions, handoffs, and cross-project notes are intentionally excluded from GitHub.
+Compact AI and cross-project instructions are versioned in `AGENTS.md`, `README_FIRST.md`, and `CROSS_PROJECT_SYNC.md`; credentials and private operational handoffs remain excluded.
