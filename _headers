@@ -11,5 +11,9 @@
 /assets/*
   Cache-Control: public, max-age=604800, stale-while-revalidate=2592000
 
+/oauth/kroger/callback/*
+  Cache-Control: no-store
+  Referrer-Policy: no-referrer
+
 /content/*
   Cache-Control: public, max-age=300, stale-while-revalidate=3600
