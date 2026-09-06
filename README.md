@@ -38,3 +38,9 @@ Production should be configured in Netlify to require Git-based deploys. Do not 
 - Large public media should use the studio media/CDN service with versioned URLs; private media should use authenticated object storage.
 
 Compact AI and cross-project instructions are versioned in `AGENTS.md`, `README_FIRST.md`, and `CROSS_PROJECT_SYNC.md`; credentials and private operational handoffs remain excluded.
+
+## Product page synchronization
+
+The public product pages follow the shipped capabilities and approved artwork in the sibling Stocked, Sesh, Nova, and GIR repositories. Run `./tools/check-product-sync.py` to detect feature documentation, product pages, or source artwork that changed after the last website review. After updating the public copy and versioned image assets, run `./tools/check-product-sync.py --record` in the same reviewed commit.
+
+A detected change is a review signal. Public copy must still avoid private configuration, unreleased claims, credentials, and user data. Brand artwork should be regenerated from each product's approved master rather than edited from a website-sized derivative.

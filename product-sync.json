@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "products": {
+    "stocked": {
+      "features": "7193c763aecb75d6d96f1b9403ed8084027b4b7fc9a1732db0f2b9c6f5bcead7",
+      "artwork": "2d31907645dbf2e01b0e71982e42af74a3f09b8fe767296ba303763d7ad8fd5f",
+      "page": "958a58a4dfdcb812c276d2d57ddc79d1bfecb2e6277aa2aab8243063b2d65a80"
+    },
+    "sesh": {
+      "features": "ed3a89cc7575a5cd3924dce1ab658e51d6f5d9892f380a51587c7f056d548558",
+      "artwork": "fb515a578ed5e702998e0d6671dc70f2fa5e950f651a2a1c23ca7e9f8a1c1c78",
+      "page": "9e34be13bb44fd43fb2adb038ff582177b354763842561626acffec0ead314e0"
+    },
+    "nova": {
+      "features": "fe066ff8f9ec82bce92f6e8a8a851b35b39d303b76cb2947a7ed4da180f58bb2",
+      "artwork": "a5c2f8734fb194652788c0fb5243cc5c96420b3eed6410e799e18f0eafd81fa7",
+      "page": "3874d3553097b2239f0e762ba837297ae78bfb13ca4044235e74623e7e7d751f"
+    },
+    "gir": {
+      "features": "99cc81db8d9c1695fa07d6f68e88e98bcf8beb682047514e682407feda252389",
+      "artwork": "e655966be0cee03fd37e3941d0cd1661a8dd5031a4ba5584e3d471dc3daef64a",
+      "page": "a7b2aeae9da401c80837e8c26efec5400b5c92cbf2278b9ed3871f8470275388"
+    }
+  }
+}
