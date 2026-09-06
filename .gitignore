@@ -9,3 +9,6 @@ _stale_locks/
 *.key
 *.p12
 *.mobileprovision
+
+# Local development guidance
+/AGENTS.md
