@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "products": {
     "stocked": {
-      "features": "7193c763aecb75d6d96f1b9403ed8084027b4b7fc9a1732db0f2b9c6f5bcead7",
+      "features": "eee97b4722c45a917741c0d4af0ecc66203b9449c880b15b503292ea21b19a25",
       "artwork": "2d31907645dbf2e01b0e71982e42af74a3f09b8fe767296ba303763d7ad8fd5f",
-      "page": "958a58a4dfdcb812c276d2d57ddc79d1bfecb2e6277aa2aab8243063b2d65a80"
+      "page": "403db9af9e43581f19f335645542229877eb636f0a2db819845781586acd5555"
     },
     "sesh": {
       "features": "ed3a89cc7575a5cd3924dce1ab658e51d6f5d9892f380a51587c7f056d548558",
