@@ -27,8 +27,11 @@ SOURCES = {
         "page": SITE / "apps/nova/index.html",
     },
     "gir": {
-        "features": DOCUMENTS / "GIR/docs/FEATURES.md",
-        "artwork": DOCUMENTS / "GIR/assets/gir.png",
+        # GIR's current branch keeps its shipped feature summary and approved banner
+        # at repository level. The former docs/assets paths belonged to an earlier
+        # branch and made a missing path look like a product/artwork change forever.
+        "features": DOCUMENTS / "GIR/README.md",
+        "artwork": DOCUMENTS / "GIR/data/images/banner.png",
         "page": SITE / "apps/gir/index.html",
     },
 }
