@@ -1,3 +1,7 @@
+> **Shared rules live in the master doc:** read `/Users/key/Documents/CLAUDE_ALL_PROJECTS_HANDOFF.md` first for the
+> shared safety, QA, build-numbering, endpoint, machine, and cross-project delivery contracts.
+> This file holds only site-repo-specific facts.
+
 # Read me first
 
 Stocked source/format acknowledgements live at `apps/stocked/sources/index.html`. Keep these aligned
