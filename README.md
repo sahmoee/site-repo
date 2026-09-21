@@ -44,3 +44,7 @@ Compact AI and cross-project instructions are versioned in `AGENTS.md`, `README_
 The public product pages follow the shipped capabilities and approved artwork in the sibling Stocked, Sesh, Nova, and GIR repositories. Run `./tools/check-product-sync.py` to detect feature documentation, product pages, or source artwork that changed after the last website review. After updating the public copy and versioned image assets, run `./tools/check-product-sync.py --record` in the same reviewed commit.
 
 A detected change is a review signal. Public copy must still avoid private configuration, unreleased claims, credentials, and user data. Brand artwork should be regenerated from each product's approved master rather than edited from a website-sized derivative.
+
+The public portfolio includes AppPulse, Let’s Date, and Atlas at `/apps/apppulse/`,
+`/apps/lets-date/`, and `/apps/atlas/`. Their pages describe development builds, not
+App Store releases.

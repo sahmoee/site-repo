@@ -16,3 +16,6 @@ not a claim of automatic bidirectional synchronization. No publication is implie
 This is the public static source for `sowensstudios.com`, deployed from Git through Netlify. Everything committed may become public. Never add credentials, private operational notes, user data, or unverified links.
 
 Preserve `_headers`, `_redirects`, `netlify.toml`, legal pages, and existing recipe/content consumers. Preview and validate the narrowest affected pages or JSON before pushing.
+
+AppPulse, Let’s Date, and Atlas have individual public product pages and app cards. Their claims
+come from the respective project READMEs; do not imply App Store availability before IDs exist.

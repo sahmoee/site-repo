@@ -26,6 +26,21 @@ SOURCES = {
         "artwork": DOCUMENTS / "Nova/Nova/Resources/Brand/Nova-AppIcon-Pastel-Master.png",
         "page": SITE / "apps/nova/index.html",
     },
+    "apppulse": {
+        "features": DOCUMENTS / "AppPulse/README.md",
+        "artwork": DOCUMENTS / "AppPulse/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+        "page": SITE / "apps/apppulse/index.html",
+    },
+    "lets-date": {
+        "features": DOCUMENTS / "Lets Date/README_FIRST.md",
+        "artwork": DOCUMENTS / "Lets Date/LetsDate/Assets.xcassets/AppIcon.appiconset/icon.png",
+        "page": SITE / "apps/lets-date/index.html",
+    },
+    "atlas": {
+        "features": DOCUMENTS / "Atlas/README.md",
+        "artwork": DOCUMENTS / "Atlas/Atlas/Assets.xcassets/AppIcon.appiconset/icon_default_1024.png",
+        "page": SITE / "apps/atlas/index.html",
+    },
     "gir": {
         # GIR's current branch keeps its shipped feature summary and approved banner
         # at repository level. The former docs/assets paths belonged to an earlier

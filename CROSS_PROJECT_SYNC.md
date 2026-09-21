@@ -1,6 +1,6 @@
 # Cross-project sync
 
-- Product truth comes from `stocked`, `StockedMac`, `Nova`, `The-Sesh`, and `GIR`.
+- Product truth comes from `stocked`, `StockedMac`, `Nova`, `The-Sesh`, and `GIR`, `AppPulse`, `Lets Date`, and `Atlas`.
 - `stocked/Brand/Stocked-AppIcon-Master.png` owns Stocked's default icon. StockedMac and this
   website consume byte-derived copies; update iOS, macOS, `assets/stocked-app-icon.png`, and
   `assets/products/stocked.png` together before the website deploys.
@@ -8,3 +8,6 @@
 - Netlify publishes the Git production branch; Cloudflare supplies DNS.
 
 Update public pages when shipped features, policies, support paths, or confirmed links change. Coordinate consumed-content schema changes with every client first.
+
+- The AppPulse, Let’s Date, and Atlas page artwork is resized from each app repository’s
+  checked-in AppIcon asset. Refresh the public copy and icon when those products change.
