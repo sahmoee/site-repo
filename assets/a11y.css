@@ -30,3 +30,10 @@ input,select,textarea{min-height:44px}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.ticker-track{animation:none!important}}
 @media (prefers-contrast:more){:root{--muted:#d0cec9;--line:#5a5a60}.button{border-color:#fff}}
 @media (max-width:640px){.facts{grid-template-columns:1fr}}
+/* Keep anchored headings visible below sticky navigation. */
+main[id],main [id]{scroll-margin-top:100px}
+/* Long addresses and URLs must not widen cards or legal layouts. */
+.prose,.facts dd,.product-card p,.footer-col{overflow-wrap:anywhere}
+.hero-grid>*,.portfolio>*,.footer-grid>*,.facts>*{min-width:0}
+/* Retain navigation focus and boundaries in system high-contrast mode. */
+@media (forced-colors:active){:focus-visible{outline-color:Highlight}.button,.nav-toggle,.product-card{border:1px solid ButtonText}.brand-mark{color:CanvasText}}
