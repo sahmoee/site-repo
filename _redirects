@@ -5,3 +5,11 @@
 /support.html  /support/    301
 /apps/reel/    /apps/   301
 /apps/orbyte/  /apps/   301
+
+# Internal notes and tooling are in the public repo but don't need to be served on the site.
+/README.md               /404.html  404!
+/README_FIRST.md         /404.html  404!
+/CROSS_PROJECT_SYNC.md   /404.html  404!
+/product-sync.json       /404.html  404!
+/tools/*                 /404.html  404!
+/content/img/recipes/README.txt  /404.html  404!
