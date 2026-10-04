@@ -3,6 +3,8 @@ name: validate-content
 on:
   push:
   pull_request:
+permissions:
+  contents: read
 jobs:
   validate:
     runs-on: ubuntu-latest

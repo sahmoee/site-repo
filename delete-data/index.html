@@ -10,8 +10,8 @@
 <input type="hidden" name="form-name" value="delete-data">
 <p class="full" hidden><label>Do not fill this out <input name="bot-field"></label></p>
 <label>App<select name="app" required><option value="">Choose an app</option><option>Stocked</option><option>Stocked Mac</option><option>Sesh</option><option>Nova</option><option>AppPulse</option><option>Let’s Date</option><option>Atlas</option><option>Steady</option><option>The Know</option><option>GIR</option><option>Website forms / email</option></select></label>
-<label>Email we can reach you at<input name="email" type="email" required autocomplete="email"></label>
-<label class="full">App identifier (optional, from Settings → Legal &amp; Data)<input name="identifier" autocomplete="off"></label>
+<label>Email we can reach you at<input name="email" type="email" required autocomplete="email" maxlength="254"></label>
+<label class="full">App identifier (optional, from Settings → Legal &amp; Data)<input name="identifier" autocomplete="off" maxlength="200"></label>
 <label class="full">What should we delete?<select name="scope"><option>Everything we hold about me</option><option>Household or shared data only</option><option>Tracking or account data only</option><option>Support messages only</option></select></label>
 <label class="full checkbox"><input type="checkbox" name="confirm" required> I understand deletion is permanent and cannot be undone.</label>
 <button class="button primary full" type="submit">Send deletion request</button>
