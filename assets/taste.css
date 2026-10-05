@@ -1,0 +1,101 @@
+/* Taste refresh (2026-10-04). Loaded after styles + a11y on every page.
+   Shared: sans display type, one 14px radius scale, no decorative eyebrow dots.
+   Homepage blocks are prefixed t-. Dark-only to match the existing site. */
+:root{--display:"SF Pro Display",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;--r:14px;--bg:#0b0b0c;--tile:#141416}
+.display,h1,h2,h3,.brand,.brand-mark,.mini-card strong,.ticker-track{font-family:var(--display)}
+h1,h2,h3,.display{letter-spacing:-.035em;font-weight:680}
+.brand{font-weight:650;letter-spacing:-.01em}
+.brand-mark{border-radius:10px;font-weight:700}
+.eyebrow:before{display:none}
+.button{border-radius:999px;transition:transform .2s cubic-bezier(.16,1,.3,1),border-color .2s,background .2s}
+.button:active{transform:scale(.98)}
+.button.primary{box-shadow:none}
+
+/* Hero */
+.home{background:var(--bg)}
+.t-hero{position:relative;overflow:hidden;border-bottom:1px solid #1f1f22}
+.t-hero:before{content:"";position:absolute;inset:-20% -10% auto 40%;height:120%;background:radial-gradient(closest-side,rgba(239,179,71,.13),transparent);pointer-events:none}
+.t-hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;min-height:min(760px,calc(100dvh - 76px));padding:72px 0}
+.t-hero h1{font-size:clamp(3rem,7vw,5.6rem);line-height:1.02;margin:0 0 .35em}
+.t-hero h1 em{font-style:normal;color:var(--gold)}
+.t-hero .lede{max-width:34ch}
+.t-icons{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.t-icons img{width:100%;height:auto;aspect-ratio:1;object-fit:contain;border-radius:23%;filter:drop-shadow(0 20px 34px rgba(0,0,0,.45));animation:t-rise .9s cubic-bezier(.16,1,.3,1) both}
+.t-icons .i1{grid-column:span 2;grid-row:span 2}
+.t-icons img:nth-child(2){animation-delay:.08s}.t-icons img:nth-child(3){animation-delay:.14s}.t-icons img:nth-child(4){animation-delay:.2s}.t-icons img:nth-child(5){animation-delay:.26s}.t-icons img:nth-child(6){animation-delay:.32s}
+.t-hero-copy>*{animation:t-rise .8s cubic-bezier(.16,1,.3,1) both}
+.t-hero-copy>:nth-child(2){animation-delay:.08s}.t-hero-copy>:nth-child(3){animation-delay:.16s}
+@keyframes t-rise{from{opacity:0;transform:translateY(18px)}}
+
+/* Sections */
+.t-section{padding:104px 0}
+.t-h2{font-size:clamp(2.3rem,5vw,4rem);line-height:1.04;margin:0}
+.t-intro{max-width:52ch;color:var(--muted);margin:18px 0 44px}
+
+/* Product bento: Stocked tall, Nova + Sesh stacked, GIR full width */
+.t-bento{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.t-tile{grid-column:span 5;display:flex;gap:24px;align-items:flex-start;padding:30px;border:1px solid #26262a;border-radius:var(--r);background:radial-gradient(circle at 100% 0,color-mix(in srgb,var(--accent) 22%,transparent),transparent 55%),var(--tile);transition:transform .3s cubic-bezier(.16,1,.3,1),border-color .3s}
+.t-tile:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--accent) 50%,#26262a)}
+.t-tile img{width:88px;height:88px;flex:none;object-fit:contain;border-radius:22%}
+.t-tile h3{font-size:1.9rem;margin:0 0 6px;color:#fff}
+.t-tile p{margin:0;color:#b4b3b7;max-width:46ch}
+.t-platforms{display:block;margin-top:16px;color:var(--accent);font-size:.86rem;font-weight:650}
+.t-stocked{grid-column:span 7;grid-row:span 2;flex-direction:column;justify-content:space-between}
+.t-stocked img{width:min(240px,50%);height:auto}
+.t-stocked h3{font-size:clamp(2.2rem,4vw,3.2rem)}
+.t-gir{grid-column:1/-1;justify-content:space-between;align-items:center;background:linear-gradient(100deg,var(--tile) 40%,color-mix(in srgb,var(--accent) 16%,var(--tile)))}
+.t-gir img{width:150px;height:auto;border-radius:0}
+.t-sub{font-size:1.15rem;margin:56px 0 16px;color:#d8d7da}
+.t-dev{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #26262a}
+.t-dev a{display:flex;gap:16px;align-items:center;padding:22px 24px 22px 0;color:#a9a8ad;transition:color .2s}
+.t-dev a:hover{color:#fff}
+.t-dev img{width:52px;height:52px;flex:none;object-fit:contain;border-radius:22%}
+.t-dev b{display:block;color:#fff;font-size:1.05rem}
+
+/* Story: statement over a verb row */
+.t-story{border-top:1px solid #1f1f22}
+.t-statement{font-size:clamp(2.6rem,7vw,5.8rem);line-height:1.02;margin:0 0 56px;max-width:14ch}
+.t-statement span{color:var(--gold)}
+.t-verbs{display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:40px;margin-bottom:44px}
+.t-verbs h3{font-size:1.5rem;margin:0 0 8px;padding-top:18px;border-top:2px solid var(--gold);display:inline-block}
+.t-verbs p{margin:0;color:var(--muted)}
+
+/* Studio: sticky heading, principles list */
+#studio{background:#0f0f11;border-block:1px solid #1f1f22}
+.t-studio{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.t-studio-head{position:sticky;top:120px}
+.t-studio-head p{color:var(--muted);max-width:42ch;margin-top:20px}
+.t-principles{margin:0}
+.t-principles div{padding:28px 0}
+.t-principles div+div{border-top:1px solid #26262a}
+.t-principles dt{font:680 1.5rem/1.2 var(--display);letter-spacing:-.02em;color:#fff}
+.t-principles dd{margin:10px 0 0;color:#b4b3b7}
+
+/* Updates form: visible label above input */
+.t-cta{max-width:720px}
+.t-cta .t-h2{margin:.2em 0 .3em}
+.t-form{margin:30px 0 18px;display:grid;gap:10px}
+.t-form>label[for]{font-weight:650;color:#e6e5e8}
+.t-form-row{display:flex;gap:10px}
+.t-form input[type=email]{flex:1;min-height:52px;padding:0 18px;border:1px solid #4a4a50;border-radius:999px;background:#141416;color:#fff}
+.t-form input[type=email]::placeholder{color:#8e8d93}
+.t-form .checkbox{margin-top:6px;color:#c9c8cc}
+
+@media(max-width:900px){
+  .t-hero-grid,.t-studio{grid-template-columns:1fr}
+  .t-hero-grid{min-height:0;padding:56px 0 64px;gap:40px}
+  .t-icons{max-width:440px}
+  .t-studio-head{position:static}
+  .t-tile,.t-stocked{grid-column:1/-1;grid-row:auto}
+  .t-dev{grid-template-columns:1fr}
+  .t-dev a+a{border-top:1px solid #26262a}
+  .t-verbs{grid-template-columns:1fr;gap:28px}
+}
+@media(max-width:680px){
+  .t-section{padding:72px 0}
+  .t-tile{flex-direction:column;padding:24px}
+  .t-gir{flex-direction:column-reverse;align-items:flex-start}
+  .t-gir img{width:110px}
+  .t-form-row{flex-direction:column}
+  .t-form-row .button{width:100%}
+}
