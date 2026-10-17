@@ -132,3 +132,27 @@ body:not(.home) .product-card p,body:not(.home) .signal p,body:not(.home) .secti
   .home .stage-stocked, .home .stage-nova, .home #contact { background: Canvas; color: CanvasText; }
   .home .stage-description, .home .stage-platform, .home .studio-product > p { color: CanvasText; }
 }
+
+/* Shared forms: explicit field geometry, including forms without the legacy .form class. */
+.form-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px 20px; min-width:0; align-items:start; }
+.form-grid > label:not(.checkbox) { display:flex; flex-direction:column; align-items:stretch; gap:8px; min-width:0; font-size:14px; font-weight:600; line-height:1.5; }
+.form-grid input:not([type=checkbox]):not([type=hidden]),.form-grid select,.form-grid textarea { display:block; width:100%; min-width:0; max-width:100%; min-height:48px; padding:11px 13px; border:1px solid #86868b; border-radius:8px; background:#fff; color:#1d1d1f; font:400 16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; box-shadow:none; }
+.form-grid textarea { min-height:160px; resize:vertical; }
+.form-grid input::placeholder,.form-grid textarea::placeholder { color:#646469; opacity:1; }
+.form-grid .checkbox { display:flex; align-items:flex-start; gap:12px; margin:0; font-size:14px; line-height:1.6; color:#424245; font-weight:400; }
+.form-grid .checkbox input { flex:0 0 20px; width:20px; height:20px; margin:2px 0 0; accent-color:#0066cc; }
+.form-grid .checkbox span { min-width:0; }
+.form-grid .checkbox a { color:#0066cc; text-decoration:underline; text-underline-offset:3px; }
+.form-grid > button.button { justify-self:start; width:auto; min-height:48px; padding:12px 22px; border-radius:8px; font-size:16px; font-weight:600; line-height:1.4; }
+.support-layout { grid-template-columns:minmax(220px,.75fr) minmax(0,1.25fr); gap:clamp(32px,6vw,96px); align-items:start; }
+.support-layout > div > h2 { margin-top:0; }
+.support-layout > div > .muted { color:#6e6e73; font-size:14px; }
+@media(max-width:800px){.support-layout { grid-template-columns:minmax(0,1fr); gap:40px; }}
+@media(max-width:540px){.form-grid { grid-template-columns:minmax(0,1fr); gap:20px; }.form-grid > button.button { width:100%; }}
+@media(forced-colors:active){.form-grid input:not([type=hidden]),.form-grid select,.form-grid textarea{background:Canvas;color:CanvasText;border-color:CanvasText}.form-grid .checkbox,.form-grid input::placeholder{color:CanvasText}.form-grid .checkbox a{color:LinkText}}
+.support-layout > div > h2 { font-size:28px; line-height:1.2; letter-spacing:-.025em; margin-bottom:20px; }
+.support-layout .list-card { border-radius:12px; padding:24px; }
+.support-layout .list-card h3 { font-size:18px; margin:0 0 12px; }
+.support-layout .list-card p { margin:0; font-size:15px; line-height:1.7; }
+.site-footer .fine nav a { color:#424245; text-decoration:underline; text-underline-offset:3px; }
+@media(forced-colors:active){.site-footer .fine nav a{color:LinkText}}
