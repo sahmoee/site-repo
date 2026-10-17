@@ -9,7 +9,6 @@
     const setOpen = open => {
       navigation.classList.toggle('open', open);
       toggle.setAttribute('aria-expanded', String(open));
-      toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
       navigation.inert = collapsed() && !open;
     };
     setOpen(false);
