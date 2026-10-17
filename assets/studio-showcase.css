@@ -154,3 +154,5 @@ body:not(.home) .product-card p,body:not(.home) .signal p,body:not(.home) .secti
 .support-layout .list-card { border-radius:12px; padding:24px; }
 .support-layout .list-card h3 { font-size:18px; margin:0 0 12px; }
 .support-layout .list-card p { margin:0; font-size:15px; line-height:1.7; }
+.site-footer .fine nav a { color:#424245; text-decoration:underline; text-underline-offset:3px; }
+@media(forced-colors:active){.site-footer .fine nav a{color:LinkText}}
