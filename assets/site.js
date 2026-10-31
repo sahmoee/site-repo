@@ -26,4 +26,16 @@
     window.addEventListener('resize', () => setOpen(false));
   }
   document.querySelectorAll('[data-year]').forEach(element => { element.textContent = new Date().getFullYear(); });
+  if (document.body.classList.contains('home') && 'IntersectionObserver' in window &&
+      !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const targets = document.querySelectorAll('.home .section-head, .home .product-card, .home .story-grid, .home .principle, .home .cta');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px 60px 0px' });
+    targets.forEach(element => { element.classList.add('reveal-ready'); observer.observe(element); });
+  }
 })();
