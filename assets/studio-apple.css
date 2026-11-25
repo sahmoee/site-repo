@@ -1,15 +1,15 @@
-/* Apple-inspired public website. Load after the structural base and a11y layer.
+/* Sowens Studios public website. Load after the structural base and a11y layer.
    Product artwork and device demonstrations retain their own identities. */
 :root {
   color-scheme: light;
-  --ink: #1d1d1f;
-  --muted: #515154;
+  --ink: #202d29;
+  --muted: #53635c;
   --surface: #fff;
-  --subtle: #f5f5f7;
-  --line: #d2d2d7;
-  --gold: #0066cc;
-  --blue: #0066cc;
-  --primary: #0066cc;
+  --subtle: #f5f3ed;
+  --line: #d3dcd5;
+  --gold: #176458;
+  --blue: #176458;
+  --primary: #176458;
   --shadow: 0 20px 60px rgb(0 0 0 / .12);
   --display: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   --text: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
@@ -33,18 +33,18 @@ h1, h2, h3, .display { letter-spacing: -.005em; font-weight: 600; line-height: 1
   text-underline-offset: .2em;
 }
 .text-link:hover, .card-link:hover, .breadcrumbs a:hover, .notice a:hover,
-.prose a:hover, .muted a:hover, .fine a:hover { color: #004b99; }
+.prose a:hover, .muted a:hover, .fine a:hover { color: #104b42; }
 :focus-visible, a:focus-visible, button:focus-visible, input:focus-visible,
-select:focus-visible, textarea:focus-visible { outline: 3px solid #0066cc; outline-offset: 4px; }
+select:focus-visible, textarea:focus-visible { outline: 3px solid #176458; outline-offset: 4px; }
 .skip:focus { z-index: 100; }
 main[id], main [id] { scroll-margin-top: 78px; }
 
-.site-header { background: #fafafc; border-bottom: 1px solid #e8e8ed; backdrop-filter: none; }
+.site-header { background: #faf9f5; border-bottom: 1px solid #e2e7df; backdrop-filter: none; }
 .nav { min-height: 44px; height: 44px; }
 .brand { font: 650 .91rem/1.15 var(--display); letter-spacing: -.015em; gap: 11px; }
 .brand-mark {
   width: 24px; height: 28px; border-radius: 0;
-  background: none; color: #1d1d1f; border: 0;
+  background: none; color: #202d29; border: 0;
   font: 730 1.18rem/1 var(--display);
 }
 .nav-links { color: var(--ink); gap: clamp(14px, 2.5vw, 36px); font-size: .84rem; font-weight: 500; }
@@ -53,13 +53,13 @@ main[id], main [id] { scroll-margin-top: 78px; }
 .nav-links a[aria-current=page] { text-decoration: underline; text-underline-offset: .3em; }
 .nav-toggle { color: var(--ink); }
 .button {
-  min-height: 44px; padding: 11px 21px; background: #0071e3; color: #fff;
+  min-height: 44px; padding: 11px 21px; background: #176458; color: #fff;
   border: 1px solid transparent; border-radius: 980px; font-weight: 400;
   font-family: var(--text); font-size: 17px; line-height: 20px; text-decoration: none;
 }
 .button:hover { color: var(--ink); background: #dedee5; border-color: transparent; transform: none; }
 .button.primary { background: var(--primary); color: #fff; border-color: var(--primary); box-shadow: none; }
-.button.primary:hover { background: #0058b2; border-color: #0058b2; }
+.button.primary:hover { background: #104b42; border-color: #104b42; }
 .button.small { min-height: 44px; padding: 8px 16px; font-size: .84rem; }
 .nav-links .button { background: none; color: var(--blue); padding-inline: 0; }
 .nav-links .button:hover { background: none; text-decoration: underline; }
@@ -79,7 +79,7 @@ main[id], main [id] { scroll-margin-top: 78px; }
 .t-hero-copy .actions { justify-content: center; margin: 0; }
 .t-art {
   isolation: isolate; position: relative; overflow: hidden;
-  background: #f5f5f7;
+  background: #f5f3ed;
 }
 .t-art::before, .t-art::after { display: none; }
 .t-icons {
@@ -122,7 +122,7 @@ main[id], main [id] { scroll-margin-top: 78px; }
 .t-tile:hover h3, .t-dev a:hover b { color: var(--blue); text-decoration: underline; text-underline-offset: .14em; }
 .t-tile-art {
   min-height: clamp(168px, 19vw, 270px); display: grid; place-items: center;
-  padding: 22px; background: #f5f5f7;
+  padding: 22px; background: #f5f3ed;
 }
 .t-tile-art img {
   width: min(57%, 174px); height: auto; aspect-ratio: 1; object-fit: contain;
@@ -139,7 +139,7 @@ main[id], main [id] { scroll-margin-top: 78px; }
 }
 .t-dev img { width: 52px; height: 52px; flex: none; object-fit: contain; border-radius: 22%; }
 .t-dev b { display: block; color: var(--ink); margin-bottom: 3px; font-size: 1.08rem; }
-.ticker { background: #fafafc; border-color: #e8e8ed; }
+.ticker { background: #faf9f5; border-color: #e2e7df; }
 .ticker-track {
   width: min(calc(100% - 2 * var(--gutter)), 1120px); margin: auto; justify-content: center; flex-wrap: wrap;
   gap: 4px 15px; color: var(--muted); font: 500 .9rem/1.5 var(--display);
@@ -158,7 +158,7 @@ main[id], main [id] { scroll-margin-top: 78px; }
 .t-studio-head p { max-width: 40ch; margin-top: 20px; }
 .t-principles { margin: 0; padding: 10px 30px; border-radius: var(--radius); background: #fff; }
 .t-principles div { padding-block: 23px; }
-.t-principles div + div { border-top: 1px solid #e8e8ed; }
+.t-principles div + div { border-top: 1px solid #e2e7df; }
 .t-principles dt { font-size: 1.15rem; font-weight: 650; }
 .t-principles dd { margin-top: 4px; }
 .t-cta {
@@ -183,10 +183,10 @@ main[id], main [id] { scroll-margin-top: 78px; }
 
 .section { padding: var(--space) 0; }
 .section h2 { font-size: var(--head); }
-.section.alt, .constellation, .product-values { background: var(--subtle); border-color: #e8e8ed; }
+.section.alt, .constellation, .product-values { background: var(--subtle); border-color: #e2e7df; }
 .page-hero {
   padding: clamp(44px, 7vw, 96px) 0 clamp(38px, 6vw, 76px);
-  border-bottom: 1px solid #e8e8ed; background: #fff;
+  border-bottom: 1px solid #e2e7df; background: #fff;
 }
 .page-hero h1 { font-size: clamp(2.5rem, 6.8vw, 5.25rem); overflow-wrap: anywhere; }
 .page-hero > .wrap:not(.product-layout) { max-width: 920px; text-align: center; }
@@ -210,7 +210,7 @@ main[id], main [id] { scroll-margin-top: 78px; }
 .value-row > div { border-color: #dedee3; }
 .product-showcase {
   min-height: clamp(250px,37vw,445px); border-radius: var(--radius);
-  background: #f5f5f7;
+  background: #f5f3ed;
 }
 .product-showcase img {
   width: min(60%, 290px); height: auto; aspect-ratio: 1; animation: none;
@@ -218,12 +218,12 @@ main[id], main [id] { scroll-margin-top: 78px; }
 }
 .product-showcase .showcase-glow, .product-showcase::after, .signal::before { display: none; }
 .device-gallery {
-  --ink: #f5f5f7; --muted: #b5b5bf; --line: #303844;
+  --ink: #f5f3ed; --muted: #b5b5bf; --line: #303844;
   background-color: #0b1019; color: var(--ink);
 }
-.device-gallery .device-head, .device-gallery .section-head :is(h2, .eyebrow), .device-gallery > .wrap > .eyebrow { color: #f5f5f7; }
+.device-gallery .device-head, .device-gallery .section-head :is(h2, .eyebrow), .device-gallery > .wrap > .eyebrow { color: #f5f3ed; }
 .device-gallery .lede, .device-gallery .section-head p { color: var(--muted); }
-.dashboard-demo { color: #f5f5f7; }
+.dashboard-demo { color: #f5f3ed; }
 .signal-grid {
   gap: 18px; border: 0; background: none; overflow: visible;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -240,7 +240,7 @@ main[id], main [id] { scroll-margin-top: 78px; }
 .update { border-color: var(--line); }
 .facts :is(dt, dd), .table thead th { color: var(--ink); }
 .table th, .table td { border-color: var(--line); }
-.site-footer { background: var(--subtle); border-color: #e8e8ed; color: var(--muted); }
+.site-footer { background: var(--subtle); border-color: #e2e7df; color: var(--muted); }
 .footer-col strong { color: var(--ink); }
 .footer-col a { color: var(--muted); }
 .footer-col a:hover { color: var(--blue); text-decoration: underline; }
@@ -290,8 +290,8 @@ main[id], main [id] { scroll-margin-top: 78px; }
 }
 
 /* The site is light by default, independent of system appearance. */
-:root { --page: #fff; --edge: #d2d2d7; --link-hover: #004b99; --primary: #0071e3; --shadow: none; }
-::selection { background: #cce5ff; color: #1d1d1f; }
+:root { --page: #fff; --edge: #d3dcd5; --link-hover: #104b42; --primary: #176458; --shadow: none; }
+::selection { background: #cce5ff; color: #202d29; }
 body { font-size: 17px; line-height: 1.47; }
 h1, h2, h3 { text-wrap: balance; }
 .lede { text-wrap: pretty; }
@@ -332,7 +332,7 @@ h1, h2, h3 { text-wrap: balance; }
 .prose h2 { font-size: clamp(28px, 4vw, 40px); }
 .prose :is(p,li) { line-height: 1.65; }
 .prose .button { text-decoration: none; }
-.product-card { border: 0; background: #f5f5f7; border-radius: 24px; box-shadow: none; }
+.product-card { border: 0; background: #f5f3ed; border-radius: 24px; box-shadow: none; }
 .product-card:hover, .journey article:hover { transform: none; border-color: transparent; }
 .product-card .icon { background: none; color: var(--blue); }
 .product-card-art { filter: none; }
@@ -354,14 +354,14 @@ h1, h2, h3 { text-wrap: balance; }
 .story-banner { grid-template-columns: minmax(0, 1fr) auto; }
 .split-callout .check-list { background: none; border: 0; border-radius: 0; }
 .check-list span { background: none; color: var(--blue); }
-.cta { border: 0; border-radius: 0; background: #f5f5f7; box-shadow: none; }
-.notice { background: #f5f5f7; border: 0; border-radius: 0; }
+.cta { border: 0; border-radius: 0; background: #f5f3ed; box-shadow: none; }
+.notice { background: #f5f3ed; border: 0; border-radius: 0; }
 .form-grid label { min-width: 0; color: var(--ink); }
 .t-form input[type=email], .form-grid :is(input:not([type=checkbox]), select, textarea), .form :is(input:not([type=checkbox]), select, textarea) { width: 100%; min-width: 0; min-height: 48px; padding: 12px 14px; border: 1px solid #86868b; border-radius: 10px; color: var(--ink); background: #fff; }
 .form-grid textarea { min-height: 160px; resize: vertical; }
 .form-grid .checkbox { display: block; min-height: 44px; }
 .form-grid .checkbox input { display: inline-block; vertical-align: middle; margin: 0 8px 0 0; }
-.form-grid input[type=checkbox] { accent-color: #0071e3; }
+.form-grid input[type=checkbox] { accent-color: #176458; }
 .form-grid a { color: var(--blue); text-decoration: underline; }
 input::placeholder, textarea::placeholder { color: #6e6e73; opacity: 1; }
 .footer-grid { font-size: 12px; }
@@ -372,9 +372,9 @@ input::placeholder, textarea::placeholder { color: #6e6e73; opacity: 1; }
 .facts dd, .table :is(th,td) { overflow-wrap: anywhere; }
 :where(.wrap,.feature-grid,.list-grid,.product-layout,.story-banner,.journey,.signal-grid,.control-room-intro) > * { min-width: 0; }
 /* Product previews are artwork: retain their native palettes and device frames. */
-.device-gallery { --ink: #f5f5f7; --muted: #b5b5bf; background: #101010; color: var(--ink); }
-.device-gallery :is(.device-head,.section-head h2,.eyebrow) { color: #f5f5f7; }
-.dashboard-demo,.phone-mock,.tablet-mock,.device,.device-screen,.tv-screen,.demo-shell { --ink: #f5f5f7; --muted: #b5b5bf; color: #f5f5f7; color-scheme: dark; }
+.device-gallery { --ink: #f5f3ed; --muted: #b5b5bf; background: #101010; color: var(--ink); }
+.device-gallery :is(.device-head,.section-head h2,.eyebrow) { color: #f5f3ed; }
+.dashboard-demo,.phone-mock,.tablet-mock,.device,.device-screen,.tv-screen,.demo-shell { --ink: #f5f3ed; --muted: #b5b5bf; color: #f5f3ed; color-scheme: dark; }
 .control-room-intro { grid-template-columns: minmax(0,.7fr) minmax(0,1.3fr); }
 .dashboard-demo, .dashboard-demo:hover { background: #424245; box-shadow: none; transform: none; }
 .device-gallery h3, .demo-top h3 { font-family: var(--display); }
@@ -387,7 +387,7 @@ input::placeholder, textarea::placeholder { color: #6e6e73; opacity: 1; }
 @media (max-width: 680px) {
   :root { --gutter: 22px; }
   .nav { position: static; }
-  .nav-links { left: 0; right: 0; top: 44px; border: 0; border-radius: 0; padding: 20px 28px 32px; gap: 0; background: #fafafc; box-shadow: none; }
+  .nav-links { left: 0; right: 0; top: 44px; border: 0; border-radius: 0; padding: 20px 28px 32px; gap: 0; background: #faf9f5; box-shadow: none; }
   .nav-links a { min-height: 48px; font-size: 24px; font-weight: 600; }
   .nav-links .button { font-size: 24px; }
   .t-art, .t-icons { min-height: 200px; }
@@ -427,16 +427,16 @@ input::placeholder, textarea::placeholder { color: #6e6e73; opacity: 1; }
 
 /* Apple.com product campaign hierarchy and restrained secondary actions. */
 .t-hero-copy .lede { font-size: clamp(21px, 2.5vw, 28px); line-height: 1.14286; font-weight: 400; color: var(--ink); }
-.button:not(.primary) { background: transparent; border-color: #0071e3; color: #06c; }
-.button:not(.primary):hover { background: #0071e3; color: #fff; }
+.button:not(.primary) { background: transparent; border-color: #176458; color: #176458; }
+.button:not(.primary):hover { background: #176458; color: #fff; }
 .nav-links .button { border: 0; }
 .page-hero h1 { font-size: clamp(32px,5vw,56px); font-weight: 600; }
-.t-hero { background: #f5f5f7; }
+.t-hero { background: #f5f3ed; }
 .t-hero-copy { padding-bottom: 24px; }
-.t-art { background: #f5f5f7; }
+.t-art { background: #f5f3ed; }
 .t-hero + .t-section { border-top: 12px solid #fff; }
 /* Optional full-width product campaigns share the same structure as the main hero. */
-.product-panel { background: #f5f5f7; text-align: center; padding-top: 52px; margin-top: 12px; overflow: hidden; }
+.product-panel { background: #f5f3ed; text-align: center; padding-top: 52px; margin-top: 12px; overflow: hidden; }
 .product-panel .t-hero-copy { padding-top: 0; }
 .product-panel .t-art { min-height: 320px; display: grid; place-items: center; padding: 24px; }
 .product-panel .t-art > img { width: min(100%, 600px); max-height: 420px; object-fit: contain; }
@@ -477,3 +477,11 @@ input::placeholder, textarea::placeholder { color: #6e6e73; opacity: 1; }
 .t-hero-copy .lede { font-family: var(--display); }
 .site-header .wrap { max-width: 980px; }
 @media (max-width:680px) { .portfolio .product-card { min-height: 0; padding: 32px 24px; } }
+
+/* Studio identity: evergreen accents, warm paper and soft sage campaigns.
+   Geometry, typography and responsive layout remain unchanged. */
+.brand-mark { color: #176458; }
+.product-panel:nth-of-type(even), .product-panel:nth-of-type(even) .t-art { background: #eaf3ef; }
+.site-footer { background: #edf1eb; }
+.t-section, .t-studio { background-color: #faf9f5; }
+::selection { background: #cce3d8; color: #202d29; }
