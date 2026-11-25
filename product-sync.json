@@ -1,50 +1,35 @@
 {
   "schemaVersion": 1,
   "products": {
-    "moneyloom": {
-      "features": "3d95ab49bb1710597479890e3507182ac77e5d46b9043488ec538824e9720598",
-      "artwork": "e54dee72b10ba5cf669f736a04aa090826322e6b059198dbeea47e3f376e6cd9",
-      "page": "185b6864333306e0968adba51d387c171c52927321ba5a014c73ed2f0f2c6cf1"
-    },
-    "the-know": {
-      "features": "1a5b689e545dd1ebe455e160b55e0e42ae52141a2b572c177c09d3515f6d150c",
-      "artwork": "e22acada1398b99d152398a21c292d39b04e3b01bd8e792b17b1bf1eb2c83b1e",
-      "page": "c55a4d89ff89403222e4a71b82d515b0c79169d03b9d6681d9660925caa7b70b"
-    },
     "stocked": {
       "features": "517f59cd4392f5d20ef148a8cde96d17adf06307aa295747e545f9a4364c7a57",
       "artwork": "2d31907645dbf2e01b0e71982e42af74a3f09b8fe767296ba303763d7ad8fd5f",
-      "page": "64a843e7c751a53008d599fd90cf79d306f62243186980543eb1554b096f1523"
+      "page": "25e0e3d44f0b0d8f7c31ee5c86ba75b7708f1c1dac83deade0367bcb4132a1ef"
     },
     "sesh": {
       "features": "c0f6eff19c4b4ac240492c14c385345b2fab572905ed933fa81a7baa2b701ca8",
       "artwork": "fb515a578ed5e702998e0d6671dc70f2fa5e950f651a2a1c23ca7e9f8a1c1c78",
-      "page": "4dbacce842d7631f81ab8e96b0ea34e72517d83c74ea59ec323a3462105832a9"
+      "page": "b6cd282196698023cc5ddef8c6154d0a6ae8460bea049fc8b3cd0dc696759bd8"
     },
     "nova": {
       "features": "5046fe491611c2fd651a3c318d550a8619164477e34eda99e524e2783b12ca6f",
       "artwork": "a5c2f8734fb194652788c0fb5243cc5c96420b3eed6410e799e18f0eafd81fa7",
-      "page": "ba08525fdcb4b0af6a5323ea8f75dabede6f175271179f8937c189015caa2d03"
+      "page": "23f13217f21956316b5e7c687ddb7d49e1c135126afacf257ea89c79bb7b64c7"
     },
     "apppulse": {
       "features": "46b608ab0434078adab71e44b7289687a25bb818b8909444335e15f71484c2c3",
       "artwork": "6324edad679656bf7984961869fabe586516b65732ddc43b4ad655d29a61c905",
-      "page": "4d14cda418c3b8f8eec68507bbdcc17aac15225228f9b228333227c1ad2d7f23"
+      "page": "87eccb06bdbcc10ce54f0df10234c730aa01c596afe38593061b0baca9200613"
     },
     "lets-date": {
       "features": "9a15d8fbbc737b42e2cabfaea4c83be368bf55edded8703aea28e736b2761403",
       "artwork": "c0fd85d325277647bd6ef9112453531778eb847db59cc34bd4565817f6bda7a5",
-      "page": "fb0a4e539572710c2d032409c7cd744e64af231458fe0aa895446ac9d371ea4b"
+      "page": "895b2af45334e8a082a38d6f2b01674fca5188083aa1ec7960d891e45ca0259a"
     },
     "atlas": {
       "features": "4faf1d750ba2327e28ffd4833491386a8e6c42fc28d3cff71a4359972d086c6e",
       "artwork": "5eda4e3f554253dc91b3b2abb9b9ee482019c664f998f089b117d288bfa1c2b1",
-      "page": "f0880d3154717d058195048e81a6b440a9024f4c21aa21ca761368de473bb64b"
-    },
-    "gir": {
-      "features": "2ea58cf7a2dc0167c613e8f62bcdb54f82f8e87c53fc1ebe4121dbb2a33242ea",
-      "artwork": "e655966be0cee03fd37e3941d0cd1661a8dd5031a4ba5584e3d471dc3daef64a",
-      "page": "2c0b130a1c5dffff69bc4ce437b06d0b849d3f809c912d5f56a5e94d46f92ceb"
+      "page": "ad5fcb6e7e69ec3fd450dc9a36e4929ad494ad158f98117c8c096e8049683244"
     }
   }
 }

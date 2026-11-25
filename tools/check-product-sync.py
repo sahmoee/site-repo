@@ -11,16 +11,6 @@ SITE = Path(__file__).resolve().parents[1]
 DOCUMENTS = SITE.parent
 MANIFEST = SITE / "product-sync.json"
 SOURCES = {
-    "moneyloom": {
-        "features": DOCUMENTS / "Moneyloom/README.md",
-        "artwork": DOCUMENTS / "Moneyloom/Moneyloom/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
-        "page": SITE / "apps/moneyloom/index.html",
-    },
-    "the-know": {
-        "features": DOCUMENTS / "The-Know/README.md",
-        "artwork": DOCUMENTS / "The-Know/TheKnow/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
-        "page": SITE / "apps/the-know/index.html",
-    },
     "stocked": {
         "features": DOCUMENTS / "Stocked/README.md",
         "artwork": DOCUMENTS / "Stocked/Brand/Stocked-AppIcon-Master.png",
@@ -50,14 +40,6 @@ SOURCES = {
         "features": DOCUMENTS / "Atlas/README.md",
         "artwork": DOCUMENTS / "Atlas/Atlas/Assets.xcassets/AppIcon.appiconset/icon_default_1024.png",
         "page": SITE / "apps/atlas/index.html",
-    },
-    "gir": {
-        # GIR's current branch keeps its shipped feature summary and approved banner
-        # at repository level. The former docs/assets paths belonged to an earlier
-        # branch and made a missing path look like a product/artwork change forever.
-        "features": DOCUMENTS / "GIR/README.md",
-        "artwork": DOCUMENTS / "GIR/bot/data/images/banner.png",
-        "page": SITE / "apps/gir/index.html",
     },
 }
 
